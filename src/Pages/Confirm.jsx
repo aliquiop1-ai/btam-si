@@ -156,28 +156,7 @@ const Confirm = ({ setLoading, loading }) => {
   } else {
     return (
       <>
-        {popUp && (
-          <div className="fixed top-0 w-full z-20  flex items-center justify-center h-screen flex-col  left-0 bg-white bg-opacity-45 ">
-            <div className="w-11/12 md:w-fit p-3 rounded-md bg-white flex flex-col items-center">
-              <img src="/payment.jpg" className="w-full md:w-1/3" />
-              <span className="text-xl my-5 text-gray-700 w-fit font-bold">
-                سارع قبل نهاية العرض !
-              </span>
-              <span className="font-bold text-gray-700">
-                يتبقى على انتهاء العرض:
-              </span>
-              <div className="text-green-600 text-4xl my-5 font-bold">
-                {formattedTime}
-              </div>
-              <button
-                onClick={() => setPop(false)}
-                className="bg-[#6c757d] text-white w-full text-lg py-2 rounded-md"
-              >
-                إغلاق
-              </button>
-            </div>
-          </div>
-        )}
+       
         {load ? (
           <div className="fixed top-0 w-full z-20  flex items-center justify-center h-screen flex-col  left-0 bg-white  ">
             <TailSpin
